@@ -42,7 +42,13 @@ main () {
         struct Person1Packed Denis;
         struct Person2Packed Andrey;
 
-        cout << "Vadim Oleg Denis Andrey" << endl << &Vadim.fatherName << " " << &Oleg.age << " " << &Denis.fatherName << " " << &Andrey.age << endl << &Vadim.height << " " << &Oleg.height << " " << &Denis.height << " " << &Andrey.height << endl << &Vadim.isMarried << " " << &Oleg.weight << " " << &Denis.isMarried << " " << &Andrey.weight << endl << &Vadim.weight << " " << &Oleg.surname << " " << &Denis.weight << " " << &Andrey.surname << endl << &Vadim.surname << " " << &Oleg.fatherName << " " << &Denis.surname << " " << &Andrey.fatherName << endl << &Vadim.age << " " << &Oleg.isMarried << " " << &Denis.age << " " << &Andrey.isMarried << endl << endl;
+        cout << "Vadim Oleg Denis Andrey" << endl 
+        << &Vadim.fatherName << " " << &Oleg.age << " " << &Denis.fatherName << " " << &Andrey.age << endl
+        << &Vadim.height << " " << &Oleg.height << " " << &Denis.height << " " << &Andrey.height << endl
+        << &Vadim.isMarried << " " << &Oleg.weight << " " << &Denis.isMarried << " " << &Andrey.weight << endl
+        << &Vadim.weight << " " << &Oleg.surname << " " << &Denis.weight << " " << &Andrey.surname << endl
+        << &Vadim.surname << " " << &Oleg.fatherName << " " << &Denis.surname << " " << &Andrey.fatherName << endl
+        << &Vadim.age << " " << &Oleg.isMarried << " " << &Denis.age << " " << &Andrey.isMarried << endl << endl;
 
         int sizePerson1 = sizeof(Vadim.fatherName) + sizeof(Vadim.surname) + sizeof(Vadim.age) + sizeof(Vadim.height) + sizeof(Vadim.weight) + sizeof(Vadim.isMarried);
         int realSizePerson1 = sizeof(Vadim);
