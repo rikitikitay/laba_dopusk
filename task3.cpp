@@ -36,7 +36,7 @@ struct Person2Packed {
         bool isMarried;
 } __attribute__((packed));
 
-main () {
+int main () {
         struct Person1 Vadim;
         struct Person2 Oleg;
         struct Person1Packed Denis;
